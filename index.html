@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cafe </title>
+
+    <!-- custom CSS LINK -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Boxicons link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="Logo">
+            <img src="Images/cafe logo.png" style="width: 80px; height: 80px;">
+        </a>
+        <div class="cafe-name">
+            <h1>Green cafe</h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#products">Our Products</a>
+            <a href="#review">Review</a>
+            <a href="#blogs">Blogs</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+        <div class="icons">
+            <div class="Search-menu">
+                <i class="fas fa-search" id="search-btn"></i>
+            </div>
+            <div class="cart-menu">
+                <i class="fas fa-shopping-cart" id="cart-btn"></i>
+                <span>0</span>
+            </div>
+            <div class="bars-menu">
+                <i class="fas fa-bars" id="menu-btn"></i>
+            </div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search here..">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+
+        <div class="cart-items-container">
+            <div class="container-close">
+                <i class="close-btn">X</i>
+            </div>
+            <div class="cart-menu">
+                <h3 id="cart-word">Cart Item</h3>
+                <div class="cart-item"></div>
+                <div class="cart-item-list"></div>
+            </div>
+            <div class="cart-footer">
+                <div class="total--amout">
+                    <span>Total: </span><span class="total-amount">$0.00</span>
+                </div>
+                <Button class="checkout-btn" id="checkout-btn" onclick="">Pay now</Button>
+            </div>
+        </div>
+    </header>
+
+    <selection class="home" id="home">
+
+        <div class="content">
+            <h3>Good ideas starts with great coffee</h3>
+            <p>Made with love and a lot of taste, Simplicity in a bowl, hand made love. </p>
+            <a href="#menu" class="button">Get yours now</a>
+        </div>
+
+    </selection>
+
+    <selection class="about" id="about">
+
+        <h1 class="heading"><span>about</span> us</h1>
+
+        <div class="row">
+
+            <div class="images">
+                <img src="Images/penne-pasta-tomato-sauce-with-chicken-tomatoes.jpg">
+            </div>
+
+            <div class="content">
+                <h2>What makes your cafe special</h2>
+                <p>Homemade noodles, pasta, pizza, etc.. can be produced by using only natural ingredients like those
+                    used for home-cooking – there is no need to rely on artificial ingredients or taste enhancers. </p>
+                <p>Because homemade food do not have to contain any artificial ingredients their taste can be adjusted
+                    to be in harmony with ingredients</p>
+
+                <a href="#review" class="button">Learn more</a>
+            </div>
+        </div>
+
+    </selection>
+
+    <selection class="menu" id="menu">
+
+        <h1 class="heading">our<span> menu</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="Images/Latte-Coffee.jpeg">
+                <h3 id=".card-title">Latte Coffee</h3>
+                <div class="price">Rs-59.99</div>
+                <button class="add-to-cart" data-name="Latte Coffee" data-price="59.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/masala-chai.jpg">
+                <h3>masala chai</h3>
+                <div class="price">rs-29.99 <span>34.99</span></div>
+                <button class="add-to-cart" data-name="Masala Chai" data-price="29.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/Hot-Black-Coffee1.jpg">
+                <h3>Black Coffee</h3>
+                <div class="price">rs-29.99 <span>34.99</span></div>
+                <button class="add-to-cart" data-name="Black Coffee" data-price="29.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/Milk-coffee.jpg">
+                <h3>Coffee</h3>
+                <div class="price">rs-24.99 <span>29.99</span></div>
+                <button class="add-to-cart" data-name="Coffee" data-price="24.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/Ice-Coffee 1.jpg">
+                <h3>Ice Coffee</h3>
+                <div class="price">rs-59.99 <span>69.99</span></div>
+                <button class="add-to-cart" data-name="Hot Black Coffee" data-price="59.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/mocha-coffee.jpg">
+                <h3>Mocha coffee</h3>
+                <div class="price">rs-49.99 <span>54.99</span></div>
+                <button class="add-to-cart" data-name="Mocha coffee" data-price="49.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/sandwich.png">
+                <h3>Sandwich</h3>
+                <div class="price">rs-55.00 <span>59.99</span></div>
+                <button class="add-to-cart" data-name="Sandwich" data-price="55.99">add to cart</button>
+            </div>
+
+
+            <div class="box">
+                <img src="Images/bread-omelette.jpg">
+                <h3>Bread omelette</h3>
+                <div class="price">rs-59.99 <span>65.00</span></div>
+                <button class="add-to-cart" data-name="Bread omelette" data-price="49.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/Chicken-Burger.png">
+                <h3>Chicken Burger</h3>
+                <div class="price">rs-99.99 <span>109.99</span></div>
+                <button class="add-to-cart" data-name="Chicken Burger" data-price="99.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/6.PNG">
+                <h3>pizza</h3>
+                <div class="price">rs-149.99 <span>154.99</span></div>
+                <button class="add-to-cart" data-name="pizza" data-price="149.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/Chicken Noodles.webp">
+                <h3>Chicken Noodles</h3>
+                <div class="price">rs-119.99 <span>129.99</span></div>
+                <button class="add-to-cart" data-name="Chicken Noodles" data-price="119.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/Veg-noodles.jpg">
+                <h3>Veg-noodles</h3>
+                <div class="price">rs-109.99 <span>89.99</span></div>
+                <button class="add-to-cart" data-name="Veg-noodles" data-price="109.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/Chicken-soup-noodles.png">
+                <h3>Chicken soup noodles</h3>
+                <div class="price">rs-129.99 <span>139.99</span></div>
+                <button class="add-to-cart" data-name="Chicken soup noodles" data-price="129.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/Black-bean-noodles.png">
+                <h3>Black bean noodles</h3>
+                <div class="price">rs-169.99 <span>179.99</span></div>
+                <button class="add-to-cart" data-name="Black bean noodles" data-price="169.99">add to cart</button>
+            </div>
+            <div class="box">
+                <img src="Images/Kimchi-noodles.jpg">
+                <h3>Kimchi noodles</h3>
+                <div class="price">rs-159.99 <span>169.99</span></div>
+                <button class="add-to-cart" data-name="Kimchi noodles" data-price="159.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/ramen-Noodles.jpg">
+                <h3>Ramen</h3>
+                <div class="price">rs-249.99 <span>279.99</span></div>
+                <button class="add-to-cart" data-name="Ramen" data-price="249.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/ramen-soup-noodles.jpg">
+                <h3>Ramen soup</h3>
+                <div class="price">rs-219.99 <span>249.99</span></div>
+                <button class="add-to-cart" data-name="Ramen soup" data-price="219.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/Veg-Paste.jpg">
+                <h3>Veg Paste</h3>
+                <div class="price">rs-99.99 <span>109.99</span></div>
+                <button class="add-to-cart" data-name="Veg Paste" data-price="99.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/Chicken-paste.jpg">
+                <h3>Chicken paste</h3>
+                <div class="price">rs-119.99 <span>129.99</span></div>
+                <button class="add-to-cart" data-name="Chicken paste" data-price="119.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/white-sauce-pasta.png">
+                <h3>white sauce pasta</h3>
+                <div class="price">rs-139.99 <span>149.99</span></div>
+                <button class="add-to-cart" data-name="white sauce pasta" data-price="139.99">add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="Images/penne-pasta-tomato-sauce-with-chicken-tomatoes.jpg">
+                <h3>penne pasta</h3>
+                <div class="price">rs-119.99 <span>129.99</span></div>
+                <button class="add-to-cart" data-name="penne pasta" data-price="119.99">add to cart</button>
+            </div>
+
+        </div>
+
+    </selection>
+
+    <selection class="products">
+
+    </selection>
+
+    <selection class="review" id="review">
+
+        <h1 class="heading"> customer's <span>review</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="Images/istockphoto-1300845620-612x612.jpg" alt="" class="user">
+                <h3>sweetha</h3>
+                <div class="stars">
+                    <img src="Images/rating.png">
+                </div>
+                <p>This place is amazing! They offered the best coffee, home made foods and showed the best attitude to
+                    its costumers. Internet connection is very fast and is unlimited as well. It was very quiet and
+                    air-conditioned. I just want to keep coming back to this place. Thank you!</p>
+            </div>
+
+            <div class="box">
+                <img src="Images/istockphoto-1300845620-612x612.jpg" alt="" class="user">
+                <h3>Selva</h3>
+                <div class="stars">
+                    <img src="Images/rating.png">
+                </div>
+                <p>Will go again.I only popped in to get take-away cappuccinos, but I was struck by how friendly the
+                    service was. The cappuccinos were wonderful too! And very well priced. </p>
+            </div>
+
+            <div class="box">
+                <img src="Images/istockphoto-1300845620-612x612.jpg" alt="" class="user">
+                <h3>Boopathi</h3>
+                <div class="stars">
+                    <img src="Images/rating.png">
+                </div>
+                <p>I would probably say that this coffee shop is a must for coffee lovers! The service was good, and the
+                    variety of coffee and home made foods served in the ambiance was very satisfying. If you like your
+                    coffee shops, then this is a must-visit! We will be back again!</p>
+
+            </div>
+
+        </div>
+
+    </selection>
+
+
+
+</body>
+
+
+<!-- Js link -->
+<script src="JS/main.js"></script>
+
+<script src="https://Kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

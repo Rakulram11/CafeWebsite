@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Details </title>
+    <link rel="stylesheet" href="CSS/buyersDetail.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="cafe-name">Green Cafe</div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+               <!--<a href="menu.html">Menu</a>-->
+                <a href="details.html">Details</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <div class="User-Form">
+            <h1 class="heading">Details</h1>
+            <form id="User-FormID" class="User-FormCL"action="">
+                <label class="Form-input" for="name">Name: </label>
+                <input type="text" id="name" class="Form-input" name="name" required>
+                <label class="Form-input" for="Email">Email: </label>
+                <input type="email" id="email" class="Form-input" name="email" required>
+                <label class="Form-input" for="Phone">Phone Number: </label> 
+                <input type="text" id="phone" class="Form-input" name="phonr" required>
+                <label class="Form-input" for="address">Address: </label> 
+                <input type="text" id="address" class="Form-input" name="address" required>
+
+                <button type="button" class="button" onclick="proceedToPayment()">Proceed to Payment</button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
